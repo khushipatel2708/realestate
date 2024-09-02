@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 // import { HttpModule } from '@angular/http';
 
-import { NgbModalModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalModule, NgbModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ReUsableModule } from './common/re-usable.module';
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,7 @@ import { MainComponent } from './main/main.component';
 import { CommonService } from './common/services/common.service';
 import { UserService } from './common/services/user.service';
 import { AdministrationModule } from './administration/administration.module';
+import { RoleModule } from './features/role/role.module';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { AdministrationModule } from './administration/administration.module';
     FormsModule,
     AppRoutingModule,
     MatComponentsModule,
-    NgbModalModule,
+    NgbModule,          // Import NgbModule
+    NgbTooltipModule
     // AdministrationModule
   ],
   exports: [

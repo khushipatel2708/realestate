@@ -1,0 +1,79 @@
+<div class="row">
+  <div class="col-12">
+    <span class="content-header"></span>
+  </div>
+</div>
+<div class="row">
+
+
+<div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <form>
+                      <div class="row">
+                        <!-- Search Input -->
+                        <div class="col-md-3">
+                          <label for="search">search</label>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text bg-primary text-white" id="Search">
+                               $
+                              </span>
+                            </div>
+                            <input type="text" id="search" class="form-control form-control-sm" placeholder="search" >
+                          </div>
+                        </div>
+                        
+                        <!-- Filter and Clear Buttons -->
+                        <div class="col-auto mt-4">
+                          <button type="submit" class="btn btn-primary btn-icon-text btn-sm mr-2">
+                           Filter
+                          </button>
+                          <button type="reset" class="btn btn-secondary btn-icon-text btn-sm">
+                            Clear
+                          </button>
+                        </div>
+                    
+                        <!-- Add New Button -->
+                        <div class="col-md-6 mt-0 mt-3 text-right">
+                          <button type="button" class="btn btn-primary btn-icon-text btn-sm"  (click)="onAddEdit(0)">
+                            <i class="fa fa-plus btn-icon-prepend"></i>Add New
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>User</th>
+                          <th>RoleNmae</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="py-1">
+                            <img src="../../assets/images/faces-clipart/pic-1.png" alt="image" />
+                          </td>
+                          <td> Herman Beck </td>
+                          <td>
+                            <div class="progress">
+                              <a class="info p-0 m-1" ngbTooltip="Edit">
+                                <i class="mdi mdi-pencil font-medium-3 mr-2"></i>
+                              </a>
+                              <a class="danger p-0" ngbTooltip="Delete">
+                                <i class="mdi mdi-delete font-medium-3"></i>
+                              </a>
+                            </div>
+                          </td>
+                          
+                          <!-- <td> $ 77.99 </td>
+                          <td> May 15, 2015 </td> -->
+                        </tr>
+                      
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>

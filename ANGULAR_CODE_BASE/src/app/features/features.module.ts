@@ -7,6 +7,10 @@ import { DashboardHomeComponent } from './users/components/dashboard/dashboard-h
 import { ReUsableModule } from '../common/re-usable.module';
 import { RegistrationComponent } from './users/registration/registration.component';
 import { FeaturesRoutingModule } from './users/features-routing.module';
+import { RoleComponent } from './role/components/role/role.component';
+import { RoleModule } from './role/role.module';
+import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   imports: [
@@ -14,12 +18,14 @@ import { FeaturesRoutingModule } from './users/features-routing.module';
     FormsModule,
     ReactiveFormsModule,
     ReUsableModule,
-    FeaturesRoutingModule
+    FeaturesRoutingModule,
+    RoleModule,
+    NgbTooltipModule
   ],
   declarations: [
     RegistrationComponent,
     EditProfileComponent, 
-    DashboardHomeComponent    
+    DashboardHomeComponent,
   ],
   providers: [
   ]

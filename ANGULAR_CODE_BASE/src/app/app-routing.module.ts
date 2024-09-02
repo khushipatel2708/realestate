@@ -1,3 +1,4 @@
+// app-routing.module.ts
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
@@ -16,6 +17,18 @@ const routes: Routes = [
       }
     ]
   },
+
+  {
+    path: 'role',
+    component: MainComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: 'app/features/role/role.module#RoleModule'
+      }
+    ]
+  },
+  
   {
     path: 'property',
     component: MainComponent,
@@ -26,6 +39,7 @@ const routes: Routes = [
       }
     ]
   },
+
   {
     path: 'users',
     component: MainComponent,
